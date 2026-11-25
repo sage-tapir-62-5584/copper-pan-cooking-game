@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Copper Pan — a cozy grill-house cooking game</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #0e3542; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #game { display: block; touch-action: none; }
+  /* Read aloud, never shown: the status line screen readers announce. */
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" aria-label="The Copper Pan: a cooking game. Read the order tickets, grill and chop the ingredients, build each dish on the plate and ring the bell to serve it."></canvas>
+<p id="status" role="status" aria-live="polite">The Copper Pan is loading.</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
